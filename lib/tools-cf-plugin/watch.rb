@@ -401,11 +401,14 @@ module CFTools
       index = payload["index"]
       uuid = payload["uuid"]
       time = payload["start"]
+      host = payload["host"]
+      user, pass = payload["credentials"]
 
       [ d(sub),
         [ "type: #{type}",
           "index: #{index}",
           "uuid: #{uuid}",
+          "uri: #{user}:#{pass}@#{host}",
           "start time: #{time}"
         ].join(", ")
       ]
