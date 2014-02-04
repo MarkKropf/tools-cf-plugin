@@ -408,7 +408,7 @@ module CFTools
         [ "type: #{type}",
           "index: #{index}",
           "uuid: #{uuid}",
-          "uri: #{user}:#{pass}@#{host}",
+          "uri: http://#{user}:#{pass}@#{host}",
           "start time: #{time}"
         ].join(", ")
       ]
